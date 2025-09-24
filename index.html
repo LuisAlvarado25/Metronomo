@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Metrónomo Sincronizado</title>
+  
+  <link rel="stylesheet" href="styles.css"> 
+  
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+</head>
+<body>
+  <h1>Spotify Metrónomo Sincronizado 🎶</h1>
+  <button id="loginBtn">Iniciar sesión en Spotify</button>
+
+  <div id="main-content">
+    
+    <div id="playlists">
+      <h3>Playlists (Cargando...)</h3>
+      <select id="playlist-selector" class="mobile-only"></select>
+      </div>
+
+    <div id="tracks"><h3>Canciones</h3></div>
+  </div>
+
+  <audio id="metronomo" src="chicharra.mp3"></audio> 
+
+  <div id="controls">
+    
+    <div id="metro-display">Metrónomo: Inactivo</div>
+
+    <div id="player-controls">
+      <button id="playBtn">▶️</button>
+    </div>
+
+    <div id="seekbar-container">
+        <span id="contador">0:00</span>
+        <div id="seekbar"><div id="seekbar-progress"></div></div>
+        <span id="duracion">0:00</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script> 
+</body>
+</html>
