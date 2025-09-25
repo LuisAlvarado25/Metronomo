@@ -2,7 +2,7 @@
 // *** 1. CONFIGURACIÓN Y DECLARACIÓN DE VARIABLES ***
 // ----------------------------------------------------
 const clientId = '9643b3fc5b11421da0364a8eff9b8545';
-const redirectUri = 'https://luisalvarado25.github.io/Metronomo/index.html'; 
+const redirectUri = 'https://luisalvarado25.github.io/Metronomo/'; 
 const scope = 'streaming user-read-playback-state user-modify-playback-state playlist-read-private';
 
 const loginBtn = document.getElementById('loginBtn');
@@ -449,5 +449,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
   metroDisplay.textContent = "Metrónomo: Inactivo";
 
 });
+
 
 
